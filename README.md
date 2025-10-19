@@ -1,29 +1,36 @@
+## Requisitos necessários:
+node 18 +
 
 ## Getting Started
 
-First, run the development server:
+git clone https://github.com/amanda-ti/lacrei.git  Amanda Teste
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+cd Amanda-teste
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+//Instale a depências
+npm i instal
 
 
 
-## Learn More
-
+Servidor local: [http://localhost:3000](http://localhost:3000) 
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+ git add .
+ git commit -m "commit message"
+ git push
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O deploy é realizado automaticamente na Vercel a cada push na branch main. A plataforma detecta a configuração do Next.js e otimiza o build automaticamente.
+
+## Rollback
+Via Vercel: Acesse "Deployments" no dashboard, selecione o deploy anterior e clique em "Promote to Production".
+Via Git: Execute git revert <hash-do-commit> e faça push. A Vercel realizará o deploy da versão revertida automaticamente.
+
+## link Vercel
+Link do projeto: https://lacrei-murex.vercel.app/
+
+## Escolhas técnicas visuais
+Criei uma pasta de componentes porque facilita a manutenção 
+
+## Testes
+
